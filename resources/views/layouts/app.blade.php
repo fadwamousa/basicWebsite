@@ -44,9 +44,17 @@
 
     </div>
 
-    <div id="footer" class="text-center">
-      <p>CopyRight 2017 &copy; </p>
+    <!-- Footer -->
+  <footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2018 Copyright: <span style="color:red">Fadwa-Mousa</span>
     </div>
+    <!-- Copyright -->
+
+    </footer>
+  <!-- Footer -->
 
 </body>
 </html>
