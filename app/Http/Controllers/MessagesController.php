@@ -30,4 +30,9 @@ class MessagesController extends Controller
 
 
     }
+
+    public function getMessage(){
+      $messages = Message::all();
+      return view('messages')->with('messages',$messages);
+    }
 }

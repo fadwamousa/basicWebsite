@@ -2,21 +2,12 @@
 
 use Carbon\Carbon;
 
-Route::get('/', function () {
-    return view('home');
-});
 
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
+Route::get('/','PagesController@getHome');
+Route::get('/about','PagesController@getabout');
+Route::get('/contact','PagesController@getcontact');
 Route::post('/contact','MessagesController@submit');
-
+Route::get('/messages','MessagesController@getMessage');
 
 Route::get('/dates', function() {
      //return Carbon::now();
