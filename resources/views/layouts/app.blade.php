@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Starter Template · Bootstrap</title>
+    <title>@yield('title') || Bootstrap</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     rel="stylesheet"
@@ -25,6 +25,14 @@
         @include('inc.casejump')
       @endif
       <div class="row">
+
+        @if(session('message'))
+          <div class="alert alert-success">
+
+            {{session('message')}}
+
+          </div>
+        @endif
         <div class="col-md-8 col-lg-8">
                @yield('content')
         </div>
